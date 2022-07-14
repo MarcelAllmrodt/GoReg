@@ -1,0 +1,84 @@
+This softwares purpose is to import, track and administrate articles and orders
+of a photography studio. It is minimalistic in design to maintain flexibility
+which is needed to cater to the different requirements of possible customer of
+the studio.
+
+
+Components:
+Goods Inbound:
+    - Consistency Check
+Goods Outbound
+Photo:
+    - Search:
+        - multiple search per ","
+        - per status
+        - per date
+        - per customer(?)
+        - status
+    - upload on server
+    - save on daily folder
+Edit:
+    - Search:
+        - multiple search per ","
+        - per status
+        - per date
+        - per customer(?)
+    - download of photo to temp folder
+    - upload on server
+    - save on daily folder
+    - export (outsourcer)
+    - import (outsourcer)
+Data Out:
+    - Search:
+        - multiple search per ","
+        - per status
+        - per date
+        - per customer(?)
+    - download of photo to temp folder
+    - access server folder (link)
+    - tree view of orders/images:
+        - name
+        - size
+        - dimension
+Administration:
+    Import Articles/Orders:
+        - XML import
+        - CSV import
+        - lock article/order imports
+    Manage Article/Order:
+        - tree view article/order status
+        - create new article
+        - create new order
+CSV exports for all(?) modules
+
+
+article data:
+- uuid (internal, generated)
+- customer
+- product ident (can also be EAN)
+- product name
+- inbound registered ts
+- outbound registered ts
+- status (active/inactive)
+
+order data:
+- uuid (internal, generated)
+- type (as str)
+- status raw
+- status edit
+- data out ts
+- status (active/inactive)
+
+
+ean data:
+- uuid_article
+- ean
+
+
+server/daily folder outline:
+ inbound registered timestamp
+YYYY
+|-MM
+   |-DD
+     |-customer_productident
+

@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/clear.ico</file>
+    <file>icons/article.ico</file>
+    <file>icons/order.ico</file>
+    <file>icons/add.ico</file>
+    <file>icons/app.ico</file>
+    <file>icons/csv.ico</file>
+    <file>icons/export.ico</file>
+    <file>icons/import.ico</file>
+    <file>icons/lock.ico</file>
+    <file>icons/remove.ico</file>
+    <file>icons/reset.ico</file>
+    <file>icons/xml.ico</file>
+  </qresource>
+</RCC>
